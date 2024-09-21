@@ -33,7 +33,7 @@ console.log(visited_countries);
   
  let count = visited_countries.length;
 res.render('index.ejs', { countries: visited_countries, total: count++ });
- 
+ db.end();
 
 });
 
